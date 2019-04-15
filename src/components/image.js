@@ -17,7 +17,7 @@ const Image = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+        placeholderImage: file(relativePath: { eq: "wpdunk-profile.png" }) {
           childImageSharp {
             fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid
@@ -26,7 +26,17 @@ const Image = () => (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => (
+      <Img
+        style={{
+          width: `140px`,
+          height: `140px`,
+          borderRadius: `50%`,
+          margin: `8% 0 6%`,
+        }}
+        fluid={data.placeholderImage.childImageSharp.fluid}
+      />
+    )}
   />
 )
 export default Image
