@@ -19,7 +19,11 @@ const IndexPage = () => (
     <p>
       At the start of 2019 I jumped into an intensive 3 months at{" "}
       <a href="https://makers.tech/">Makers Academy</a> to skill up as a junior
-      dev. Best coding practices baked in (TDD{" "}
+      dev. Best coding practices baked in{" "}
+      <span role="img" aria-label="cake slice emoji">
+        🍰
+      </span>{" "}
+      (TDD{" "}
       <span role="img" aria-label="nerd and test tube emoji">
         🤓🧪
       </span>
